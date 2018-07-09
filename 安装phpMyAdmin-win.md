@@ -23,10 +23,10 @@ htdocs\phpMyAdmin\libraries
 $cfg['AllowArbitraryServer'] = false;
 ```
 修改成：
-···
+```
 $cfg['AllowArbitraryServer'] = true;
 $cfg['Servers'][$i]['host'] = '服务器的ip地址';
 $cfg['Servers'][$i]['port'] = '服务器的端口';
 $cfg['Servers'][$i]['user'] = '服务器的用户名';
 $cfg['Servers'][$i]['password'] = '服务器的密码';
-···
+```
