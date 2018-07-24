@@ -18,15 +18,9 @@ htdocs\phpMyAdmin\libraries
 
 2. 修改config.default.php
 
-找到"AllowArbitraryServer"
 ```
-$cfg['AllowArbitraryServer'] = false;
-```
-修改成：
-```
-$cfg['AllowArbitraryServer'] = true;
-$cfg['Servers'][$i]['host'] = '服务器的ip地址';
-$cfg['Servers'][$i]['port'] = '服务器的端口';
-$cfg['Servers'][$i]['user'] = '服务器的用户名';
-$cfg['Servers'][$i]['password'] = '服务器的密码';
+$cfg['Servers'][$i]['host'] = '远程服务器的ip地址';
+$cfg['Servers'][$i]['port'] = '远程服务器的端口，如果是3306，就不用填写';
+$cfg['Servers'][$i]['user'] = '登录远程服务器的用户名';
+$cfg['Servers'][$i]['password'] = '登录远程服务器的密码';
 ```
